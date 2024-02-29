@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding: 2rem;
+}
+
+:root {
+  font-size: 16px;
+}
+
+i {
+  font-size: 1.2rem;
+}
+
+body,
+html {
+  background-color: #f9f7f7;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  scale: 1;
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out;
+  &:hover {
+    filter: brightness(80%);
+  }
+  &:active {
+    scale: 0.98;
+  }
+}
+
+.btn-secondary {
+  background-color: #e6e6e6;
+  border: none;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #5125ad;
+  border: none;
+}
+
+.fld-text {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.fld-date {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid black;
+}
+
+.btn-delete {
+  display: flex;
+  align-items: center;
+  border: 2px solid red;
+  color: red;
+  background-color: transparent;
+  scale: 1;
+  transition: all 0.2s ease-in-out;
+  & i {
+    padding-right: 0.5rem;
+  }
+  &:active {
+    scale: 0.96;
+  }
+  &:hover {
+    color: white;
+    background: red;
+    filter: none;
+  }
+}
+
+.required {
+  color: red;
+}
+
+header {
+  background-color: #dbe2ef;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  filter: drop-shadow(0.4rem 0.4rem 1rem #dbe2ef);
+  & h1 {
+    color: #112d4e;
+    font-weight: 500;
+  }
+  & .site-name {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  & .img-logo {
+    width: 4.688rem;
+  }
+}
+
+.site-profile {
+  display: flex;
+  align-items: center;
+}
+
+header div i {
+  font-size: 5rem;
+  padding: 1rem;
+  color: #112d4e;
+}
+
+nav ul a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.3rem;
+  color: #112d4e;
+  margin: 0.5rem;
+}
+
+.select {
+  width: 120px;
+}
+
+.btn-edit {
+  display: grid;
+  align-items: center;
+  border: 0;
+  padding: 0.2rem;
+  background: transparent;
+  cursor: pointer;
+  & i {
+    font-size: 1.6rem;
+  }
+  &:hover {
+    scale: 1.01;
+  }
+  &:active {
+    scale: 0.98;
+  }
+}
+
+.warning-icon {
+  color: orange;
+  display: grid;
+  align-items: center;
+  border: 0;
+  padding: 0.2rem;
+  background: transparent;
+  & i {
+    font-size: 1.6rem;
+  }
+}
+
+.btn-pet {
+  display: block;
+  width: 200px;
+  border: none;
+  background-color: #c0c0c0;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-trash {
+  color: red;
+}
